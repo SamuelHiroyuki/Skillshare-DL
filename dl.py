@@ -2,10 +2,10 @@ import sys, os
 from skillshare import Skillshare, splash
 
 # or by class ID:
-# dl.download_course_by_class_id(189505397)
+# dl = Skillshare("PHPSESSID=1c33be9de9fc2c0d588314a935770619")
 
 def main():
-    dl = Skillshare("PHPSESSID=1c33be9de9fc2c0d588314a935770619")
+    dl.download_course_by_class_id(1183819361)
     course_url = sys.argv[1]
     dl.download_course_by_url(course_url)
 
